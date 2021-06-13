@@ -1,5 +1,5 @@
 function isFirstComeFirstServed(takeOutOrders, dineInOrders, servedOrders) {
-    if(servedOrders.length === 0)
+    if(servedOrders.length === 0 && takeOutOrders === 0 && dineInOrders.length === 0)
         return true;
     // Check if we're serving orders first-come, first-served
     if(takeOutOrders.length && takeOutOrders[0] === servedOrders[0])

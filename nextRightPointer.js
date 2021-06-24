@@ -16,14 +16,73 @@ var connect = function(root) {
     return root;
 };
 
-const levelOrderTraversal = (root, parent) => {
-
+const levelOrderTraversal = (root, noden) => {
+    if(!root)
+        return null;
+    let q = new Queue();
+    q.enqueue(root);
+    let visited = [];
+    while(q !== null) {
+        n = q.dequeue();
+        if(n.left === null) {
+            n.left = noden;
+            break;
+        } else {
+            q.enqueue(n.left)
+        }
+        if(n.right === null) {
+            n.right = noden;
+            break;
+        } else {
+            q.enqueue(n.right)
+        }
+        if(!visited.includes(root)) {
+            visited.push(root);
+        }
+    } 
+    return root;   
 }
-var root = new Node(1);
-root.left = 2;
-root.right = 3;
-root.left.left = 4
-root.left.right = 5
-root.right.left =6;
-root.right.right =7;
-console.log(connect(root));
+const deleteANode = (root, noden) => {
+    if(!root)
+        return null;
+        let right = root;
+    while(right) {
+        right = right.right;
+    }
+
+ let q = new Queue();
+    q.enqueue(root);
+    let visited = [];
+    if(root === noden) {
+        root = right;
+        return root;
+    }
+    while(q !== null) {
+        n = q.dequeue();
+        if(n.left === noden) {
+            n.left = right;
+            break;
+        } else {
+            q.enqueue(n.left)
+        }
+        if(n.right === noden) {
+            n.right = right;
+            break;
+        } else {
+            q.enqueue(n.right)
+        }
+        if(!visited.includes(root)) {
+            visited.push(root);
+        }
+    } 
+    return root;   
+}}
+var root = new Node(10);
+root.left = 11;
+root.right = 9;
+root.left.left = 7
+root.left.right = null
+root.right.left =15;
+root.right.right =8;
+var noden = new Node(12);
+console.log(JSON.stringify(levelOrderTraversal(root, noden)));

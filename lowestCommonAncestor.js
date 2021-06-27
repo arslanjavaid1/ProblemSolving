@@ -3,27 +3,24 @@ function Node(val, left, right, next) {
     this.left = left === undefined ? null : left;
     this.right = right === undefined ? null : right;
  };
-
+var ans = null;
  var lowestCommonAncestor = function(root, p, q) {
     if(!root)
         return null
-    return LCA(root, p, q)
+    LCA(root, p, q)
+    return ans;
 };
 
 var LCA = (root, p,q) => {
-    if(!root) return false;
-    let lcL = false;
-    let lcR = false;
-    if (root.left)lcL = LCA(root.left,p,q);
-    if (root.right) lcR = LCA(root?.right,p,q);
-    if(root.val === p.val || root.val === q.val)
-     return true;
-    if(lcL || lcR)
-        return true;
-     if(lcL && lcR)
-        return root;
-    }
-
+    if(!root)
+        return false;
+    let mid = root.val === p.val || root.val === q.val ? 1 : 0;
+    let l = LCA(root.left,p,q) ? 1 : 0;
+    let r = LCA(root.right,p,q) ? 1 : 0;
+    if(mid + l + r >= 2)
+        ans = root;
+    return (mid + l + r > 0);
+}
 var root = new Node(3);
 root.left = new Node(5);
 root.right =            new Node(1);

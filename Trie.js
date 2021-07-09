@@ -88,17 +88,14 @@ const Trie = function() {
 const trie = new Trie();
 
 // insert few values
-trie.insert("peter");
-trie.insert("piper");
-trie.insert("picked");
-trie.insert("pickled");
-trie.insert("pepper");
-console.log(trie)
-// check contains method
-console.log(trie.contains("picked"));  
-console.log(trie.contains("pepper")); 
-trie.remove("pepper");
-// check find method
-console.log(trie.find("pi"));  
-console.log(trie.find("pe")); 
+trie.insert("Cat");
+trie.insert("Mat");
+trie.insert("Ca");
+trie.insert("tM");
+trie.insert("at");
+trie.insert("C");
+trie.insert("Dog");
+trie.insert("og");
+trie.insert("Do");
+console.log(trie.find("CatMat"))
 

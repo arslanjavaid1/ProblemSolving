@@ -5,7 +5,7 @@ function mergeArrays(myArray, alicesArray) {
     let currentIndexAlices = 0;
     let currentIndexMine = 0;
     let currentIndexMerged = 0;
-  
+   
     while (currentIndexMerged < (myArray.length + alicesArray.length)) {
       const firstUnmergedAlices = alicesArray[currentIndexAlices];
       const firstUnmergedMine = myArray[currentIndexMine];

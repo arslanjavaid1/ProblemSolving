@@ -1,11 +1,11 @@
-/**
- * @param {number[][]} matrix
- * @return {void} Do not return anything, modify matrix in-place instead.
- */d
- var rotate = function(matrix) {
-    for(let i = 0 ; i < matrix.length; i ++) {
-        
+var rotate = function (matrix) {
+    if (matrix.length <= 1)
+        return matrix
+    let len = matrix.length
+    for (let i = 0; i < len; i++) {
+        for (let j = i + 1; j < len; j++) {
+            [matrix[i][j], matrix[j][i]] = [matrix[j][i], matrix[i][j]];
+        }
     }
+    return matrix.map((x) => x.reverse());
 };
-console.log(rotate([[1,2,3],[4,5,6],[7,8,9]]))
-Number.par  

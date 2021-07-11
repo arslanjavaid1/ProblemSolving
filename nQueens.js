@@ -38,4 +38,4 @@ const nQueens = (n) => {
     helper(0);
     return result;
 }
- console.log(nQueens(4))
+ console.log(nQueens(8))

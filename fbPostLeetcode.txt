@@ -1,0 +1,2 @@
+Q1- given orderedDict return the dictionary sorted by ascending order and update the dictionary to have the index of order instead of value. : {a:100, b: -1,  c: 30} return {b: 1, c: 2, a:3}
+Q2; Given input "123xyzabc" and ['abc' , '12'] replace the string with <b></b> if it is in the arrays

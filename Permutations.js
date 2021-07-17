@@ -19,7 +19,7 @@
             permutation.push(nums[i]);
             backTrack(nums, permutation,visited,result);
             visited[i] = false;
-            permutation.pop(nums[i]);
+            permutation.pop();
         }
     }
     

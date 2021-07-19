@@ -33,11 +33,10 @@ function smallestContigousSubArray (s, arr) {
         windowStart = 0;
     let min = Number.MAX_VALUE;
     for(let windowEnd = 0; windowEnd < arr.length; windowEnd++) {
-        windowSum += arr[windowEnd];
-        if(windowSum >= s) {
+        windowSum += arr[windowEnd];        
+        while(windowSum >= s) {
             min = Math.min( (windowEnd - windowStart + 1) , min);
-            windowSum -= arr[windowStart];
-            windowStart += 1;
+            windowSum -= arr[windowStart++];
         } 
     }
     return min;
@@ -141,10 +140,12 @@ for(let windowEnd = 0; windowEnd < str.length; windowEnd++) {
 }
 return max;
 };
+let target = 7, nums = [2,3,1,2,4,3]
+console.log(smallestContigousSubArray(target, nums))
 //const result = fruitIntoBasket( [1, 2, 1]);    
 //console.log(`Averages of subarrays of size K: ${result}`);
- const result1 = characterReplacement("AAAB", 0);    
-console.log(`Averages of subarrays of size K: ${result1}`);
+ //const result1 = characterReplacement("AAAB", 0);    
+//console.log(`Averages of subarrays of size K: ${result1}`);
 // const result2 = fruitIntoBasket( [1,2,3,2,2]);    
 // console.log(`Averages of subarrays of size K: ${result2}`);
 // const result3 = fruitIntoBasket( [3,3,3,1,2,1,1,2,3,3,4]);    

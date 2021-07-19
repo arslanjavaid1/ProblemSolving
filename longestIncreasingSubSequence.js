@@ -1,14 +1,26 @@
-const longestIncreasingSubSequence = (arr) => {
-let max = Array(arr.length).fill(1);
-    for (let i = 0; i < arr.length; i++) {
-        let sum = Array();
-        for (let k of max) {
-            if (arr[k] < arr[i])
-                sum[k] = 1;
-        }
-        max[i] = 1 + Math.max(sum.length, 0);
-    }
-    return Math.max(max.length, 0);
-}
+/**
+ * @param {number[]} nums
+ * @return {number}
+ */
+ var lengthOfLIS = function(arr) {
+    let n = arr.length;
+   let size = 0;
+   let result = Array(n);
+   for (let num of arr) {
+       let [l, h] = [0, size];
+       while (l < h) {
+           let mid = Math.trunc((l + h) / 2);
+           if (result[mid] < num)
+               l = mid + 1;
+           else
+               h = mid;
+       }
+       result[l] = num;
+       if(l === size) {
+           size++
+       }
+   }
+   return size;
+};
 
-console.log(longestIncreasingSubSequence([5,2,8,6,3,6,9,5]))
+console.log(lengthOfLIS([5, 2, 8, 6, 3, 6, 9, 5]))

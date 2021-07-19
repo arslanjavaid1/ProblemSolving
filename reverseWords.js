@@ -29,7 +29,12 @@ while (start <= end ) {
 }
 return message;
 }
-input = 'thief cake'.split('');
-reverseWords(input);
+function _reverseWords(message) {
+    console.log(message);
+    let s = message.join('');
+    s =  s.split(' ').reverse().filter(x => x !== '').join(' ').split('');
+    return s
+}
+s = ["t","h","e"," ","s","k","y"," ","i","s"," ","b","l","u","e"];
   
   

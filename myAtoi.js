@@ -11,7 +11,6 @@
     if(s[i] === '-' || s[i] === '+') {
         negative = s[i] === '-' ? true : false;
         i++;
-
     }
     while(i < n && s[i] >= '0' && s[i] <= '9') {
         number += s[i];

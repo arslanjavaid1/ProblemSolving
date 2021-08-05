@@ -37,4 +37,6 @@ const getModifiedString = (s) => {
     }
     return newHash;
 }
-console.log(longestPalindrome("racecar"));
+let s = "babad"
+
+console.log(longestPalindrome("babad"));

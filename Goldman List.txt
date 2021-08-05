@@ -1,0 +1,40 @@
+https://leetcode.com/problems/binary-tree-right-side-view/
+https://leetcode.com/problems/sliding-window-maximum/
+https://www.geeksforgeeks.org/minimum-number-platforms-required-railwaybus-station/
+https://leetcode.com/problems/reverse-nodes-in-k-group/
+https://leetcode.com/problems/fraction-to-recurring-decimal/
+https://www.geeksforgeeks.org/find-subarray-with-given-sum-in-array-of-integers/
+https://www.geeksforgeeks.org/four-people-rickety-bridge/
+https://www.geeksforgeeks.org/find-the-smallest-window-in-a-string-containing-all-characters-of-another-string/ minimum Window Substring
+https://www.geeksforgeeks.org/kth-smallestlargest-element-unsorted-array/ 
+https://www.geeksforgeeks.org/count-ways-reach-nth-stair-using-step-1-2-3/
+https://stackoverflow.com/questions/10005544/interview-question-data-structure-to-set-all-values-in-o1
+https://www.geeksforgeeks.org/find-the-first-repeated-character-in-a-string/
+https://www.geeksforgeeks.org/queue-using-stacks/
+https://leetcode.com/problems/longest-palindromic-substring/
+https://leetcode.com/problems/longest-palindromic-subsequence/
+https://www.geeksforgeeks.org/chocolate-distribution-problem/ 
+https://leetcode.com/problems/n-queens/
+https://leetcode.com/problems/gas-station/
+https://www.geeksforgeeks.org/given-a-string-find-its-first-non-repeating-character/
+https://www.geeksforgeeks.org/given-sorted-array-number-x-find-pair-array-whose-sum-closest-x/
+https://www.geeksforgeeks.org/given-a-string-find-its-first-non-repeating-character/
+Design a Library management System
+System design question – need to design to detect anomaly in stock purchasing:- need to store previous stock purchase in a different table and use that
+https://www.geeksforgeeks.org/given-sorted-dictionary-find-precedence-characters/
+System Design: Auctioning System; discussed the key features needed, and the tables that could be used.
+https://leetcode.com/problems/kth-smallest-element-in-a-bst/ Kth largest BST
+https://leetcode.com/problems/min-stack/
+https://www.geeksforgeeks.org/minimum-length-unsorted-subarray-sorting-which-makes-the-complete-array-sorted/
+https://www.geeksforgeeks.org/costs-required-to-move-all-1s-to-each-index-of-a-given-binary-array/
+https://leetcode.com/problems/snapshot-array/
+https://www.thepoorcoder.com/hackerrank-connected-cells-in-a-grid-solution/
+https://www.geeksforgeeks.org/move-zeroes-end-array/
+https://leetcode.com/problems/top-k-frequent-words/
+https://www.geeksforgeeks.org/convert-normal-bst-balanced-bst/
+https://leetcode.com/problems/predict-the-winner/
+https://www.geeksforgeeks.org/given-a-sequence-of-words-print-all-anagrams-together/
+https://www.geeksforgeeks.org/minimum-length-subarray-sum-greater-given-value/
+https://www.geeksforgeeks.org/find-the-row-with-maximum-number-1s/
+https://leetcode.com/problems/3sum/
+https://leetcode.com/problems/linked-list-cycle/

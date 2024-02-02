@@ -30,11 +30,8 @@ var duplicateZeros = function(arr) {
             i++;
         }
     }
-    console.log(arr);
     arr.splice(arrLength - arr.length);
-    console.log(arr);
     return;
-
 };
 
 let nums = [1,0,2,3,0,4,5,0];
